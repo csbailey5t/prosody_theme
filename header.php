@@ -6,37 +6,37 @@
 <title><?php if ( is_single() || is_page() || is_paged() ) {
       bloginfo('name');
       wp_title(' | ');
- 
+
 } else if ( is_author() ) {
       bloginfo('name');
-      wp_title(' | Archive for ');	  
-	  
+      wp_title(' | Archive for ');
+
 } else if ( is_archive() ) {
       bloginfo('name');
       echo (' | Archive for ');
       wp_title('');
- 
+
 } else if ( is_search() ) {
       bloginfo('name');
       echo (' | Search Results');
- 
+
 } else if ( is_404() ) {
       bloginfo('name');
       echo (' | 404 Error (Page Not Found)');
-	  
+
 } else if ( is_home() ) {
       bloginfo('name');
       echo (' | ');
       bloginfo('description');
- 
+
 } else {
       bloginfo('name');
       echo (' | ');
       echo (''.$blog_longd.'');
 }
  ?></title>
-	
-<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> 
+
+<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <?php if ( is_single() ) { ?>
 <meta name="description" content="<?php wp_title(''); ?>" />
 <meta name="keywords" content="<?php wp_title(''); ?>" />
@@ -47,19 +47,22 @@ else { ?>
 <?php } ?>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel='stylesheet' type='text/css' media='all' href='/scripts/thickbox.css' />
+<link rel='stylesheet' type='text/css' media='all' href='<? echo get_template_directory_uri(); ?>/scripts/thickbox.css' />
 
-<script language="javascript" type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-1.3.2.min.js"></script>
-<script language="javascript" type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-ui-1.7.3.custom.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+<script src="<?php echo get_template_directory_uri(); ?>/scripts/thickbox-compressed.js"></script>
 <script language="javascript" type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js"></script>
-<script language="javascript" type="text/javascript" src="/scripts/thickbox-compressed.js"></script>
+
 <script language="javascript" type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/popup.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){
     var cookieName = 'stickyAccordion';
 
-	$("#poem_sorting").accordion({ 
+	$("#poem_sorting").accordion({
 		active: ( $.cookies.get( cookieName ) || 0 ),
 		header: 'h4',
 		autoHeight: false,
@@ -102,22 +105,22 @@ else { ?>
 			});
 		}
 	});
-	
+
   });
 </script>
 <?php } ?>
 
 <?php if (is_front_page() ) { ?>
-<script type="text/javascript" src="/scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="<? echo get_template_directory_uri(); ?>/js/jquery.cycle.js"></script>
 <script type="text/javascript">
-	jQuery(document).ready(function(){
-		jQuery('#logo').cycle({
-			timeout:  100,
-			speed:    300,
-			speedIn:     100,
-    		speedOut:    null,
-			delay:    -100,
-			nowrap:  1
+	$(document).ready(function(){
+		$('#logo').cycle({
+                                    fx: 'none',
+            		timeout:  100,
+            		speed:    500,
+            		delay:    -100,
+            		nowrap:  1,
+
 		});
 		$('#poem-tabs').tabs();
      });
@@ -138,23 +141,23 @@ else { ?>
 <div id="contactInfo" style="display:none"><p>Questions or suggestions?  Please write to <a href="mailto:prosody@collab.itc.virginia.edu">prosody@collab.itc.virginia.edu</a>.</p></div>
 <div id="masthead" class="wrapper">
 	<?php if (is_home()) { ?>
-	<div id="logo"> 
-		<img src="/images/logo01.gif" alt="" /> 
-		<img src="/images/logo02.gif" alt="" /> 
-		<img src="/images/logo03.gif" alt="" /> 
-		<img src="/images/logo04.gif" alt="" />
-		<img src="/images/logo05.gif" alt="" />
-		<img src="/images/logo06.gif" alt="" />
-		<img src="/images/logo.gif" alt="<?php bloginfo('name'); ?>" />
+	<div id="logo">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo01.gif" alt="" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo02.gif" alt="" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo03.gif" alt="" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo04.gif" alt="" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo05.gif" alt="" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo06.gif" alt="" />
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" alt="<?php bloginfo('name'); ?>" />
 	</div>
 	<?php } else { ?>
 	<h1 id="logo"><a href="/"><?php bloginfo('name'); ?></a></h1>
 	<?php } ?>
 	<div id="intro">
 	<p><strong><?php bloginfo('name'); ?>:</strong> <?php bloginfo('description'); ?></p>
-	
+
 	<h2 id="tagline"><a href="http://www.engl.virginia.edu/">a project of the University of Virginia English Department</a></h2>
-	
+
 	</div>
 </div>
 

@@ -1,4 +1,4 @@
-/*  
+/*
 Theme Name: Cat4 Baseline Theme
 Theme URI: http://www.category4.com
 Description: A baseline theme for Category 4 projects
@@ -8,7 +8,7 @@ Author URI: http://www.category4.com/
 */
 
 
-/* 
+/*
 TABLE OF CONTENTS
 
   HTML Elements
@@ -24,39 +24,39 @@ TABLE OF CONTENTS
 
 /* ---------- @ HTML Elements -----------*/
 
-* { 
+* {
 	margin: 0;
 	padding: 0;
-	} 
+	}
 
 body, html {
 	min-height:101%;
 	}
-	
-body {	
+
+body {
 	color:#fff;
-	background: #232323 url(/images/bg.jpg) repeat-x;;
+	background: #232323 url(images/bg.jpg) repeat-x;;
 	}
-	
-body, select, textarea, input {	
+
+body, select, textarea, input {
 	font: 100% Arial, Verdana, Helvetica, sans-serif;
 	}
 
-p {	
+p {
 	margin: 15px 0;
 	line-height:150%;
 	}
-		
-a, a:visited {	
+
+a, a:visited {
 	color: #A1A1A3;
-	text-decoration:underline 
+	text-decoration:underline
 	}
 
-a:hover, a:active {	
+a:hover, a:active {
 	color:#c99a73;
 	}
 
-*:focus { 
+*:focus {
 	outline: none;
 	}
 
@@ -91,7 +91,7 @@ cite {
 }
 
 blockquote p {
-	margin: 0 0 15px;	
+	margin: 0 0 15px;
 }
 
 table {
@@ -114,7 +114,7 @@ th {
 	background: #19191B;
 	letter-spacing: .05em;
 	}
-	
+
 td {
 	background: #222222;
 	border-bottom: 1px solid #1a1a1a;
@@ -144,7 +144,7 @@ dt {
 }
 
 dl.media dt {
-	padding: 15px 20px 15px 0; 
+	padding: 15px 20px 15px 0;
 }
 
 dd {
@@ -170,18 +170,18 @@ iframe {
 
 hr {
 	clear: both;
-	background: #222224; 
+	background: #222224;
 	color: #222224;
-	width:100%; 
-	height:1px; 
-	margin:15px 0; 
+	width:100%;
+	height:1px;
+	margin:15px 0;
  	border:none;
 	display:block
 }
 
-	
-		
-	
+
+
+
 
 /* ---------- @ Page Structure -----------*/
 
@@ -193,9 +193,9 @@ hr {
 	padding: 0 47px;
 	overflow: hidden;
 	}
-	   
+
 #masthead {
-	background: url(/images/bg_wrapper.jpg) right no-repeat;
+	background: url(images/bg_wrapper.jpg) right no-repeat;
 	height: 185px;
 	margin-top: 22px;
 	}
@@ -211,7 +211,7 @@ hr {
 #widecolumn {
 	overflow: hidden;
 }
-	
+
 #content {
 	width:650px;
 	float:left;
@@ -222,18 +222,18 @@ hr {
 	width: 625px !important;
 	padding-right: 25px;
 }
-	
+
 #sidebar {
 	width:265px;
 	float:right;
 	overflow: hidden;
 	}
 
-.left {	
+.left {
 	float:left;
 	}
 
-.right {	
+.right {
 	float:right;
 	}
 
@@ -250,7 +250,7 @@ hr {
 	font-size: .9em;
 	overflow: visible;
 	}
-	
+
 #nav li {
 	list-style:none;
 	float:left;
@@ -315,7 +315,7 @@ hr {
 }
 
 #subnav.ui-tabs-nav li.current_page_item a, #subnav.ui-tabs-nav li.current_page_item a:visited {
-	color: #a1a0a0;	
+	color: #a1a0a0;
 }
 
 #subnav.ui-tabs-nav li.ui-tabs-selected a, #subnav.ui-tabs-nav li.ui-tabs-selected a:visited {
@@ -365,11 +365,11 @@ hr {
 	text-decoration: none;
 }
 
-	
-		
+
+
 /* ---------- @ Headings -----------*/
 
-		   
+
 h1#logo,
 h1#logo a, h1#logo a:visited {
 	float: left;
@@ -392,16 +392,16 @@ div#logo {
 }
 
 div#logo img {
-	display: block;	
+	display: block;
 }
 
 h1 {
 	font-size: 2em;
 }
 
-h2 {	
+h2 {
 	font: 2.4em Georgia, "Times New Roman", Times, serif;
-	background: url(/images/bg_hdr.gif) left 8px no-repeat;
+	background: url(images/bg_hdr.gif) left 8px no-repeat;
 	letter-spacing: .05em;
 	padding: 14px 0 10px;
 	}
@@ -416,26 +416,26 @@ h2#tagline a, h2#tagline a:visited {
 	display: block;
 	height: 50px;
 	width: 265px;
-	background: url(/images/tagline.gif) no-repeat;
+	background: url(images/tagline.gif) no-repeat;
 	margin-top: 30px;
 	padding: 0;
 }
 
-h3 {	
+h3 {
 	font: 1.7em Georgia, "Times New Roman", Times, serif;
 	letter-spacing: .05em;
 	margin: 20px 0 -5px;
 	}
-	
-#sidebar h3 {	
+
+#sidebar h3 {
 	font: 1.9em Georgia, "Times New Roman", Times, serif;
-	background: url(/images/bg_hdr_sidebar.gif) 90px top no-repeat;
+	background: url(images/bg_hdr_sidebar.gif) 90px top no-repeat;
 	text-align: right;
 	margin: 0;
 	padding: 20px 0 14px;
 	}
-	
-h4 {	
+
+h4 {
 	font: 1.4em Georgia, "Times New Roman", Times, serif;
 	letter-spacing: .05em;
 	margin: 20px 0 -5px;
@@ -448,7 +448,7 @@ dd h4 {
 h4.poem-sort-method {
 	display: block;
 	height: 40px;
-	background: #19191b url(/images/icon_plus.gif) 248px 16px no-repeat;
+	background: #19191b url(images/icon_plus.gif) 248px 16px no-repeat;
 	border-bottom: 1px solid #0b0b0d;
 	padding: 0 24px;
 	text-align: right;
@@ -462,11 +462,11 @@ h4.poem-sort-method {
 }
 
 h4.selected {
-	background-image: url(/images/icon_minus.gif);
+	background-image: url(images/icon_minus.gif);
 	cursor: pointer !important;
 }
 
-h5 {	
+h5 {
 	color: #A1A1A3;
 	font: 1em Georgia, "Times New Roman", Times, serif;
 	text-transform: uppercase;
@@ -478,7 +478,7 @@ h5 {
 /* ---------- @ Content Styles -----------*/
 
 /*General*/
-	
+
 #masthead #intro {
 	float: right;
 	width: 265px;
@@ -500,17 +500,17 @@ h5 {
 }
 
 .entry {
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .excerpt blockquote {
-	margin: 10px 0 20px;	
+	margin: 10px 0 20px;
 }
 
 .entry ul, .entry ol {
 	padding:0 15px 10px 10px;
 	margin:15px 0;
-	}		
+	}
 
 .entry ul li {
 	list-style-type: square;
@@ -521,7 +521,7 @@ h5 {
 .entry ol li {
 	margin-left:15px;
 	padding:3px 0;
-	}			
+	}
 
 .entry img {
 	margin:5px 14px 6px 0;
@@ -577,7 +577,7 @@ h5 {
 	}
 
 .pagination {
-	margin: 20px 0;	
+	margin: 20px 0;
 }
 
 a.download {
@@ -606,10 +606,10 @@ a.download {
 }
 
 .ui-tabs-panel {
-	border-bottom: none !important;	
+	border-bottom: none !important;
 }
 
-	
+
 
 /* ---------- @ Float Clearing -----------*/
 
@@ -620,7 +620,7 @@ a.download {
 	height:0;
 	content:".";
 	}
-	
+
 .clearfloat {
 	display:inline-block;
 	}
@@ -635,7 +635,7 @@ a.download {
 #footer {
 	height: 118px;
 	padding-top: 50px;
-	background: url(/images/bg_footer.gif) repeat-x;
+	background: url(images/bg_footer.gif) repeat-x;
 	text-align: center;
 	}
 
@@ -809,7 +809,7 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 
 /* Footer styles */
 #ft {
-	background-image: url('/images/bg_footer.gif');
+	background-image: url('images/bg_footer.gif');
 	background-repeat: repeat-x;
 	padding-top: 18px;
 	height: 125px;
