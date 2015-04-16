@@ -52,7 +52,7 @@ else { ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-
+<script type="text/javascript">var tb_pathToImage = "<?php echo get_template_directory_uri(); ?>/scripts/images/loadingAnimation.gif";</script>
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/thickbox-compressed.js"></script>
 <script language="javascript" type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js"></script>
 
